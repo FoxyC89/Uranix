@@ -12,13 +12,13 @@ body {
 }
 
 header {
-    height: fit-content;
-    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top:0;
     border: 5px solid rgb(0, 195, 3);
-    background-color: rgb(255, 255, 255);
-   
+    padding: 10px 20px;
 }
-
 header a {
     text-decoration: none;
     color: rgb(0, 195, 3);
@@ -31,6 +31,17 @@ header a:hover {
     background-color: rgb(225, 255, 225);
 }
 
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px; /* Space between links */
+}
 
 .logo-img {
     width: 4rem;
@@ -47,6 +58,7 @@ main {
     margin-top: 0vh;
     background-color: rgb(209, 255, 206);
 }
+
 
 .content-wrapper {
     width: 100%;
