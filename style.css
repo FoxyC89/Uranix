@@ -14,10 +14,10 @@ body {
 header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content:space-around,space-between;
     top:0;
     border: 5px solid rgb(0, 195, 3);
-    padding: 10px 20px;
+    padding: 15px 10px;
 }
 header a {
     text-decoration: none;
@@ -40,7 +40,7 @@ nav ul {
 }
 
 nav ul li {
-    margin-left: 20px; /* Space between links */
+    margin-left: 20px;
 }
 
 .logo-img {
