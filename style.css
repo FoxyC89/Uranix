@@ -13,9 +13,6 @@ body {
 
 header {
     height: fit-content;
-    width: 100vw;
-    display: grid;
-    direction: row;
     top: 0;
     border: 5px solid rgb(0, 195, 3);
     background-color: rgb(255, 255, 255);
@@ -33,6 +30,7 @@ header a:hover {
     text-decoration: solid;
     background-color: rgb(225, 255, 225);
 }
+
 
 .logo-img {
     width: 4rem;
