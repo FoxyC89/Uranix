@@ -1,35 +1,114 @@
-<!DOCTYPE html>
-<html lang="cs">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uranix</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <img alt="logo" src="https://i.pinimg.com/736x/dd/4b/50/dd4b50ad5849ca8aa1f7ddf164277400.jpg" class="logo-img"></img>
-        <a href="index.html"><strong>Domů</strong></a>
-        <a href="clenove.html"><strong>Členové</strong></a>
-        <a href="https://docs.google.com/document/d/1Who7sicH70qzJG9Jwr6cjpM1OqxP15dq"><strong>Zákoník</strong></a>
-    </header>
-    <main>
-        <div class=" content-wrapper">
-            <section class="hero-section">
-                <h1><strong>URANIX</strong></h1>
-                <p></p>
-                <h3><strong>Jako kdyby uranem dohodil.</strong></h3>
-            </section>
-            <section class="content-section">
-                <h2>Něco o vzniku</h2>
-                <p>Uranix vznikl na podzim roku 2023 ve třídě V3 na gymnáziu v Říčanech. Zrovna se probírala přímá a nepřímá úměrnost a čtyři experti jménem Tomáš Horák, Tomáš Veselý, Kryštof Gurecký a Mikuláš Malina při projektu "továrna" založili jadernou elektrárnu pod společností jménem Uranix. Pak 29. 5. 2024 proběhla takzvaná Anti-Gulášová revoluce, při které se zjistilo, že zakladatel WhatsAppové skupiny Uranix je Mikuláš. Někteří členové nechtěli Mikuláše v Uranixu, ale protože nešel vyhodit ze skupiny, byla založena nová. Mikuláš Malina tam byl přidán až 16. října 2024. Postupem času se na to skoro zapomělo a málem by Uranix i zanikl, nebýt toho faktu, že se těm čtyřem připojili další. Dosavadní velikost Uranixu je 11 členů (04. 2. 2025).</p>
-                <h2>Co je to Uranix?</h2>
-                <p>Uranix je společnost vlastnící jedernou elektrárnu, uranový důl a společnost Urahlík. Více o nich naleznete níže. Jaderná elektrárna má dohromady 4 reaktory a každý z nich jednu chladící věž. 1.-3. reaktory jsou pro výdělek a tak se energie z nich získaná prodává levně okolním domácnostem. 4. reaktor patří Uranixu a energie z něj se odvádí rovnou do několika těžících strojů. Uranové týče, nezbytné pro výrobu elektřin,y jsou pod dozorem personálu vytvářeny ihned na místě ve speciální drtičce. Proto je naše energie 100% přírodní a naprosto ekologická.</p>
-                <h2>Uranový důl a Urahlík</h2>
-                <p>V uranovém dole hluboko pod továrnou pracují dobře placení horníci. Jejich aktuální plat činí 100000 korun měsíčně. Celé doly má na starost Kryštof Gurecký a veliký těžební stroj s několika vrtačkami ovládá Daniel Koudelka. Stroj se tvrdou skálou šine rychlostí až 10 km/h a uran vytěžený za jeden den spotřebuje elektrárna za týden. Proto naši pracovníci chodí do práce pouze jeden den v týdnu.</p>
-                <p>Urahlík oproti tomu je něco jako podfirma specializující se potraviny s uranem. Návrh na tuto společnost podal Kryštof a tak se o ní také stará. Není to samozřejmě hlavní přísun peněz, ale spíše něco jako zadní vrátka, kdyby se něco zvrtlo. To se samozřejmě stát ale nemůže, páč máme i ochranku vedenou Tomášem Veselým. Urahlík je název vyplývající ze slov "uran" a "rohlík". Tak je to proto, že prvními produkty byly právě tyto rohlíky buď s přidaným uranem, nemo uranovou pomazánkou.</p>
-            </section>
-        </div>
-    </main>
-</body>
-</html>
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100vw;
+    min-height: 100vh;
+    line-height: 1.5em;
+    word-spacing: 0.16em;
+    letter-spacing: 0.1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top:0;
+    border: 5px solid rgb(0, 195, 3);
+    padding: 10px 20px;
+}
+header a {
+    text-decoration: none;
+    color: rgb(0, 195, 3);
+    background-color: rgb(255, 255, 255);
+}
+
+header a:hover {
+    color: rgb(0, 169, 45);
+    text-decoration: solid;
+    background-color: rgb(225, 255, 225);
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px; /* Space between links */
+}
+
+.logo-img {
+    width: 4rem;
+    height: 4rem;
+    margin-right: 4rem;
+    margin-left: 4rem;
+}
+
+main {
+    width: 100%;
+    color: rgb(0, 153, 0);
+    display: flex;
+    flex-direction: row;
+    margin-top: 0vh;
+    background-color: rgb(209, 255, 206);
+}
+
+
+.content-wrapper {
+    width: 100%;
+    height: 100vh;
+    position: right;
+    display: flex;
+    flex-direction: column;
+    color: rgb(0, 153, 0);
+    background-color: rgb(209, 255, 206);
+    font-size: 1,5rem;
+}
+
+h1 {
+    display: grid;
+    place-items: center;
+    font-size: 5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    background-color: rgba(209, 255, 206, 0);
+    color: rgb(0, 255, 0);
+}
+
+section{
+    font-size: 1.5rem;
+}
+
+h1 p {
+    display: grid;
+    place-items: center;
+    font-size: 4rem;
+    color: rgb(0, 255, 0);
+}
+
+.hero-section {
+
+    background-image: url(https://media4.manhattan-institute.org/wp-content/uploads/sites/5/Where-Now-for-Nuclear-Power.jpg);
+    font-size: 2rem;
+    color: rgb(0, 255, 0);
+}
+
+.content-section {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: right;
+    background-color: rgb(209, 255, 206);
+    color: rgb(0, 153, 0);
+    padding-left: 3rem;
+    font-size: 1,5rem;
+    border-top: 3px solid rgb(0, 255, 55);
+}
+
